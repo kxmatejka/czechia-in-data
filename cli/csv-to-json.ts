@@ -1,6 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
 
+// td fix path
 const main = () => {
   const data = fs.readFileSync(path.join(__dirname, 'data.csv')).toString()
   const [header, ...records] = data.trim().split('\n')
