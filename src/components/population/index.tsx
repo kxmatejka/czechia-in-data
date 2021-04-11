@@ -11,7 +11,7 @@ const Container = styled.div`
   font-family: "Open Sans", sans-serif;
 `
 
-const Population = () => {
+export const Population = () => {
   return (
     <Container>
       <TotalPopulation/>
@@ -20,5 +20,3 @@ const Population = () => {
     </Container>
   )
 }
-
-export default Population
