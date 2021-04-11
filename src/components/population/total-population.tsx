@@ -19,7 +19,7 @@ export const TotalPopulation = () => {
         <AreaChart data={data}>
           <CartesianGrid strokeDasharray='3 3'/>
           <XAxis dataKey='year'/>
-          <YAxis tickFormatter={(value) => value.toLocaleString()} width={100}/>
+          <YAxis tickFormatter={(value) => value.toLocaleString()} width={80}/>
           <Tooltip formatter={(value, name) => [value.toLocaleString(), name]}/>
           <Area type='monotone' dataKey='population' stroke={'#5e76a5'} strokeWidth={2} fill={'#4a74c9'}/>
         </AreaChart>

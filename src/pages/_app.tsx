@@ -1,5 +1,7 @@
 import React from 'react'
-import {createGlobalStyle} from 'styled-components'
+import Head from 'next/head'
+import styled, {createGlobalStyle} from 'styled-components'
+import {Link} from '../components/link'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -12,14 +14,33 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: #fff;
+    font-family: "Open Sans", sans-serif;
   }
+`
+
+const Container = styled.div`
+  max-width: 960px;
+  margin: auto;
+  padding: 25px;
+`
+
+const Heading = styled.h1`
+  text-align: center;
 `
 
 const SpringApp = ({Component, pageProps}) => {
   return (
     <>
+      <Head>
+        <title>Czechia in data</title>
+      </Head>
       <GlobalStyle/>
-      <Component {...pageProps} />
+      <Container>
+        <Heading>
+          <Link href='/'>Czechia in data</Link>
+        </Heading>
+        <Component {...pageProps}/>
+      </Container>
     </>
   )
 }

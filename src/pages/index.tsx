@@ -1,10 +1,3 @@
-import React from 'react'
-import {Header} from '../components/header'
-
-const Home = () => {
-  return (
-    <Header text='Heading'/>
-  )
-}
+import {Home} from '../components/home'
 
 export default Home
