@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import styled, {createGlobalStyle} from 'styled-components'
-import {Link} from '../components/link'
+import {Link} from '@/src/components/link'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {

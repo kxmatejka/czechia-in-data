@@ -1,3 +1,3 @@
-import {Population} from '../components/population'
+import {Population} from '@/src/components/population'
 
 export default Population

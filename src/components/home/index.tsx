@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from '../link'
+import {Link} from '@/src/components/link'
 import Map from './map.svg'
 
 const Container = styled.div`
